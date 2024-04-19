@@ -17,7 +17,18 @@
       </ul>
     </nav>
     <h1>This is my favorite Boba Shop!</h1>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3d38UhgkvwFRb1CXjZ-wCvuXZ8JEgiHk&callback=initMap"></script>
+    <div style="width:100%;height:300px;"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3d38UhgkvwFRb1CXjZ-wCvuXZ8JEgiHk&callback=initMap"></script>
+    <script>
+      function initMap(){
+        //add your javascrip between these two lines of code
+        var boba = {lat: 40.700802, lng:73.987602};
+        var map = new google.map.Map(document.getElementById("map"));
+        var googlemap = new google.maps.Map(document.getElementById("map"), {center: boba});
+        var loc = new google.maps.Marker({position: boba, map: googlemap})
+      }
+    </script>
+    </div>
     <footer>
       <p>^_^ Created by Etornam Adevor ^_^</p>
     </footer>
