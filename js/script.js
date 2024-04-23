@@ -1,4 +1,4 @@
-function initMap(){
+async function initMap(){
     //add your javascrip between these two lines of code
     let boba = {lat: 41.85441589355469, lng:-87.63263702392578};
     let map = new google.map.Map(
