@@ -18,8 +18,14 @@
         <li><a href="map.html">Map</a></li>
       </ul>
     </nav>
+    <script>
+      function initMap(){
+        let boba = {lat: 41.85441589355469, lng:-87.63263702392578};
+        let map = new google.map.Map(document.getElementById("map"), {zoom:10, center: boba});
+        let marker = new google.maps.Marker({position: boba, map: googlemap})
+      }
+    </script>
     <h1>This is my favorite Boba Shop</h1>
-    <div id="map"></div>
     <footer>
       <p>^_^ Created by Etornam Adevor ^_^</p>
     </footer>
