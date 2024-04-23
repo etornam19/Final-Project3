@@ -6,4 +6,4 @@ function initMap(){
     var loc = new google.maps.Marker({position: boba, map: googlemap})
 
 }
-google.maps.event.addDomListener(window,'load', init);
+google.maps.event.addDomListener(window,'load', initMap);
