@@ -12,7 +12,7 @@ function displayMap(){
     zoom: 10
   };
     
-  const mapDiv  = document.getElementById('map');
+  const mapDiv  = document.getElementById("map");
   const map = new google.map.Map( mapDiv, mapOptions);
   return map;
 
