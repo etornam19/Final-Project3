@@ -14,4 +14,4 @@ async function initMap(){
         map: map,
     });
 }
-initMap();
+google.maps.event.addDomListener(window, 'load', initMap);
