@@ -93,3 +93,6 @@ footer{
   border-radius: 0px 10px;
   margin-top: 10px;
 }
+#map{
+  height: 100%;
+}
